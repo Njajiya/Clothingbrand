@@ -1,0 +1,29 @@
+#div1 {
+    background-color:rgb(255, 255, 255);
+    width:33.33%;
+    float:right;
+    height:600px;
+    background-image: url(image3.jpg);
+    background-repeat: no-repeat;
+   
+    
+}
+#div2{
+    background-color: rgb(255, 255, 255);
+    width:33.33%;
+    float:left;
+    height:600px;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+   background-position: auto;
+   margin-left: 150px;
+}
+#div3{
+    background-color:rgb(255, 255, 255);
+    width:auto
+    float:0 auto;
+    height:600px;
+    font-size: larger;
+    color:black;
+
+}

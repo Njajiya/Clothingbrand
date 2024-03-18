@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\najnb\Desktop\youfit22\stylegallery.css">
+</head>
+<body>
+    <header>
+        <img src="S.png" alt="logopic" width="150px" height="150px">
+     </header>
+     <div class="topnav">
+         <a  href="youfit.html">Home</a>
+         <a  href="AboutUs.html">About Us</a>
+         <a class="active" href="#Gallery">Gallery</a>
+         <a href="Services.html">Services</a>
+         <a href="ContactUs.html">Contact Us</a>
+       </div>
+       <style>
+ 
+       .topnav {
+         background-color:rgb(137, 119, 146);
+         overflow: hidden;
+       }
+       
+       .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+       }
+       
+      
+       .topnav a:hover {
+         background-color: #b58484;
+         color: black;
+       }
+       
+     
+       .topnav a.active {
+         background-color: #b080ae;
+         color: white;
+       }
+       </style>
+       <div class="container">
+        <h1>Our Gallery</h1>
+       <div class="image-container">
+      
+        <div class="image"><img src="neck.jpg" alt=""></div>
+        <div class="image"><img src="eve3.jpg" alt=""></div>
+        <div class="image"><img src="sho1.jpg" alt=""></div>
+        <div class="image"><img src="shirt.jpg" alt=""></div>
+        <div class="image"><img src="11.jpg" alt=""></div>
+        <div class="image"><img src="22.jpg" alt=""></div>
+       </div>
+    </div>
+    <div class="popup-image">
+      <span>&times;</span>
+      <img src="neck.jpg" alt="">
+    </div>
+    <div>
+      <script>
+        document.querySelectorAll('.image-container img').forEach(image=>{
+        image.onclick =() =>{
+          documemnt.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image').src = image.getAttribute('src');
+        }
+        });
+        documents.querySelector('.popup-image span').onclick = () =>{
+          documemnt.querySelector('.popup-image').style.display = 'none';
+        }
+      </script>
+    </div>
+    <footer style="background-color:rgb(137, 119, 146)";>
+        Author:Najiya<br>
+        &copy; Copyrights reserved<br>
+  
+
+      <small><a href="mailtoYouFitagencey@gmail.com" style="color: rgb(255, 255, 255);">YouFit@agencey.com</a></small>
+
+    </footer>
+</body>
+</html>
