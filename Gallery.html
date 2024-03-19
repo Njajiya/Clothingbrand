@@ -57,6 +57,23 @@
         <div class="image"><img src="22.jpg" alt=""></div>
        </div>
     </div>
+    <div class="popup-image">
+      <span>&times;</span>
+      <img src="neck.jpg" alt="">
+    </div>
+    <div>
+      <script>
+        document.querySelectorAll('.image-container img').forEach(image=>{
+        image.onclick =() =>{
+          documemnt.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image').src = image.getAttribute('src');
+        }
+        });
+        documents.querySelector('.popup-image span').onclick = () =>{
+          documemnt.querySelector('.popup-image').style.display = 'none';
+        }
+      </script>
+    </div>
     <footer style="background-color:rgb(137, 119, 146)";>
         Author:Najiya<br>
         &copy; Copyrights reserved<br>
